@@ -20,7 +20,7 @@ def long_planeteer_calls(calls)
   calls.each do |call|
     call_length << call.length
   end
-  call_length.any? > 4
+  call_length.any?{|i| i > 4}
 end
 
 def find_the_cheese# code an argument here
